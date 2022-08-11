@@ -1,6 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
+---
+permalink: privacy.html
+---
+{%- extends 'base.html' -%}
+{%- block style %}
     <style>
 
       @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
@@ -250,11 +252,12 @@
 
     </style>
 
-
+{% endblock %}
+{% block meta %}
     <meta charset="UTF-8">
     <base href="https://uniglobalunion-surveys.org/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+{% endblock %}{% block cc_css %}{% endblock %}{% block social_metadata %}
     <!-- social metadata -->
     <title>Privacy Policy | UNI Global Union Surveys</title>
     <meta name="description" content="Our privacy policy."/>
@@ -265,7 +268,7 @@
     <meta property="og:image" content="https://uniglobalunion-surveys.org/img/facebook-social-default.png" />
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:image" content="https://uniglobalunion-surveys.org/img/twitter-social-default.png" />
-
+{% endblock %}{% block favicon %}
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -276,29 +279,11 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-
-
-  </head>
-
-  <body>
-    <nav>
-      <img class="logo" src="./img/uniglobal-logo.png">
-      <ul class="nav-list">
-        <li class="nav-item item1"><a href="">Survey</a></li>
-        <li class="nav-item item2"><a href="about"><span class="longtext">About UNI Global Union</span><span class="shorttext">About</span></a></li>
-        <li class="nav-dropdown item3">
-            <button class="dropbtn">EN</button>
-            <div class="dropdown-content">
-              <a href="https://de.uniglobalunion-surveys.org/about">DE</a>
-              <a href="https://es.uniglobalunion-surveys.org/about">ES</a>
-              <a href="https://fr.uniglobalunion-surveys.org/about">FR</a>
-              <a href="https://it.uniglobalunion-surveys.org/about">IT</a>
-              <a href="https://pl.uniglobalunion-surveys.org/about">PL</a>
-            </div>
-        </li>
-      </ul>
-    </nav>
-
+{% endblock %}
+{% block cc_js %}{% endblock %}
+{% block meta_pixel %}{% endblock %}
+{% block gtm %}{% endblock %}
+{% block content %}
     <div class="privacytext">
       <h2>Privacy Statement</h2>
         <p>This survey is published by UNI Global Union, in collaboration with Jarrow Insights. We take your privacy seriously and we make every reasonable effort to respect it.</p>
@@ -313,5 +298,4 @@
         </div>
     </div>
   </body>
-
-</html>
+{% endblock %}

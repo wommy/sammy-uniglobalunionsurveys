@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+{%- block style %}{% endblock %}
+    <meta charset="UTF-8">
+    <base href="https://uniglobalunion-surveys.org/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block cc_css %}
+    <link rel="stylesheet" href="./js/cookieconsent-2.8.2/src/cookieconsent.css" media="print" onload="this.media='all'">
+{% endblock %}{% block social_metadata %}
+    <!-- social metadata -->
+    <title>About | UNI Global Union Surveys</title>
+    <meta name="description" content="UNI Global Union brings together workers from over 150 different countries in the service economy to win better jobs and better lives."/>
+    <meta property="og:title" content="About | UNI Global Union Surveys" />
+    <meta property="og:description" content="UNI Global Union brings together workers from over 150 different countries in the service economy to win better jobs and better lives." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://uniglobalunion-surveys.org/img/facebook-social.png" />
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image" content="https://uniglobalunion-surveys.org/img/whats-app-social.jpg" />
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="300"/>
+    <meta property="og:image" content="https://uniglobalunion-surveys.org/img/twitter-social.png" />
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="1200"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="https://uniglobalunion-surveys.org/img/facebook-social.png" />
+{% endblock %}{% block favicon %}
+{% endblock %}
+{% block cc_js %}
+    <script defer src="./js/cookieconsent-2.8.2/src/cookieconsent.js"></script>
+    <script defer src="./js/cookieconsent-init.js"></script>
+{% endblock %}{% block meta_pixel %}
+{% include 'meta_pixel.html' %}
+{% endblock %}
+{% block gtm %}{% include 'google_tag_manager.html' %}{% endblock %}
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="./img/uniglobal-logo.png">
+      <ul class="nav-list">
+        <li class="nav-item item1"><a href="">Survey</a></li>
+        <li class="nav-item item2"><a href="about"><span class="longtext">About UNI Global Union</span><span class="shorttext">About</span></a></li>
+        <li class="nav-dropdown item3">
+            <button class="dropbtn">EN</button>
+            <div class="dropdown-content">
+              <a href="https://de.uniglobalunion-surveys.org/about">DE</a>
+              <a href="https://es.uniglobalunion-surveys.org/about">ES</a>
+              <a href="https://fr.uniglobalunion-surveys.org/about">FR</a>
+              <a href="https://it.uniglobalunion-surveys.org/about">IT</a>
+              <a href="https://pl.uniglobalunion-surveys.org/about">PL</a>
+            </div>
+        </li>
+      </ul>
+    </nav>
+		{% block content %}{{ content | safe }}{% endblock %}
+</html>

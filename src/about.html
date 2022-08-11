@@ -1,6 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
+---
+layout: base
+permalink: about.html
+title: 'About'
+---
+{% block style %}
     <style>
 
       @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
@@ -257,12 +260,8 @@
     }
 
     </style>
-
-    <meta charset="UTF-8">
-    <base href="https://uniglobalunion-surveys.org/">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./js/cookieconsent-2.8.2/src/cookieconsent.css" media="print" onload="this.media='all'">
-
+{% endblock %}
+{% block social_metadata %}
     <!-- social metadata -->
     <title>About | UNI Global Union Surveys</title>
     <meta name="description" content="UNI Global Union brings together workers from over 150 different countries in the service economy to win better jobs and better lives."/>
@@ -280,45 +279,7 @@
     <meta property="og:image:height" content="1200"/>
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:image" content="https://uniglobalunion-surveys.org/img/facebook-social.png" />
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-
-
-    <script defer src="./js/cookieconsent-2.8.2/src/cookieconsent.js"></script>
-    <script defer src="./js/cookieconsent-init.js"></script>
-
-    <!-- Meta Pixel Code -->
-    <script type="text/plain" data-cookiecategory="targeting">
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '580467373431564');
-      fbq('track', 'PageView');
-    </script>
-    <!-- End Meta Pixel Code -->
-
-    <!-- Google Tag Manager -->
-    <script type="text/plain" data-cookiecategory="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-53KNQKG');</script>
-    <!-- End Google Tag Manager -->
-
+{% endblock %}
   </head>
 
   <body>
@@ -354,6 +315,3 @@
       </div>
 
     </div>
-  </body>
-
-</html>
